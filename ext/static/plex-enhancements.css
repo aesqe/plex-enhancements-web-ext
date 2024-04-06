@@ -1,0 +1,136 @@
+.plex-enhancements-play-trailer-button {
+  background-color: #885d00;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color ease-in-out 0.1s;
+}
+
+.plex-enhancements-play-trailer-button:hover {
+  background-color: #b88d00;
+}
+
+.plex-enhancements-play-trailer-button::before {
+  background-image: url(../icons/play-trailer.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: '';
+  width: 18px;
+  height: 21px;
+  margin-right: 6px;
+  opacity: 0.6;
+  transition: opacity 0.1s;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.plex-enhancements-trailer-iframe-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  border: none;
+  background-color: black;
+}
+
+.plex-enhancements-trailer-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 250px);
+  border: none;
+  background-color: black;
+}
+
+.plex-enhancements-close-trailer-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100001;
+  background-color: #7d4700;
+  padding: 20px 40px;
+  cursor: pointer;
+  display: none;
+  border-radius: 5px;
+}
+
+.plex-enhancements-letterboxd-link {
+  color: transparent !important;
+  background-image: url(../icons/letterboxd-logo-h-neg-rgb-150px.png);
+  background-size: 100%;
+  width: 100px;
+  height: 20px;
+  display: inline-block;
+}
+
+.plex-enhancements-tmdb-link {
+  color: transparent !important;
+  background-image: url(../icons/tmdb-logo.svg);
+  background-size: 100%;
+  width: 100px;
+  height: 13px;
+  display: inline-block;
+}
+
+.plex-enhancements-imdb-link {
+  color: transparent !important;
+  background-image: url(../icons/IMDb_Logo_Rectangle_Gold.png);
+  background-size: 100%;
+  width: 40px;
+  height: 20px;
+  display: inline-block;
+}
+
+.plex-enhancements-missing-key-notice {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px 20px;
+  background-color: #d04400;
+  border-top: 1px solid #dd9d7e;
+  box-shadow: 0px -10px 20px #48180070;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.plex-enhancements-missing-key-notice p {
+  margin: 0;
+}
+
+.plex-enhancements-missing-key-notice div {
+  display: flex;
+}
+
+.plex-enhancements-missing-key-notice button {
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  min-width: 130px;
+  text-align: center;
+}
+
+.plex-enhancements-missing-key-notice-dismiss-button {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.plex-enhancements-missing-key-notice-options-button {
+  background-color: #fff1e9;
+  color: #d96e3b;
+}

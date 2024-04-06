@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    form {
+      margin: 2rem 1rem 1rem;
+    }
+
+    div {
+      margin-bottom: 1rem;
+      width: 100%;
+      display: flex;
+    }
+
+    label {
+      flex: 1;
+      margin-top: 1rem;
+    }
+
+    textarea {
+      padding: 0.5rem 2rem 0.5rem 0.5rem;
+      flex: 2;
+      border: 1px solid #d6d6d7;
+      border-radius: 5px;
+      min-height: 8rem;
+    }
+
+    .disco-cta-button {
+      font-size: 14px;
+      min-width: 79px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 6.5px 14px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      margin-left: auto;
+    }
+
+    .disco-cta-button:hover {
+      background-color: #d6d6d7;
+    }
+
+    .disco-cta-button:active {
+      background-color: #b6b6b7;
+    }
+
+    .saved {
+      background-image: url("chrome://global/skin/icons/check.svg");
+      background-size: 1rem;
+      background-repeat: no-repeat;
+      background-position: 98% center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <div>
+      <label for="tmdbAuthKey">TMDB Read Access Token</label>
+      <textarea id="tmdbReadAccessToken"></textarea>
+    </div>
+    <div>
+      <button class="disco-cta-button" type="submit">Save</button>
+    </div>
+  </form>
+  <script src="config.js"></script>
+</body>
+
+</html>
